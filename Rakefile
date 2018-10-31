@@ -12,6 +12,11 @@ namespace :greeting do
 
 end
 
+task :environment do
+  require_relative './config/environment'
+end 
+
+
 namespace :db do
 
   desc 'migrate changes to your detabase'
@@ -19,4 +24,4 @@ namespace :db do
     Student.create_table
   end
 
-end 
+end
