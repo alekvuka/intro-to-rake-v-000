@@ -11,3 +11,9 @@ namespace :greeting do
   end
 
 end
+
+namespace :db do
+
+  desc 'migrate changes to your detabase'
+  task :migrate => :environment do 
+    Student.create_table
